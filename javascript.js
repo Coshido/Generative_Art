@@ -1,8 +1,20 @@
-window.addEventListener("load", function () {
-  const canvas = document.getElementById("main-canvas");
+const canvas = document.getElementById("main-canvas");
+
+window.onload = function () {
   const context = canvas.getContext("2d");
   canvas.height = window.innerHeight;
   canvas.width = window.innerWidth;
+
+  window.onresize = function () {
+    resizeCanvas();
+    drawFractal();
+    updateSlider();
+  };
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
 
   //settings
   context.lineCap = "round";
@@ -117,4 +129,4 @@ window.addEventListener("load", function () {
     sidesSlider.value = sides;
     sidesLabel.textContent = "Sides: " + sides;
   }
-});
+};
