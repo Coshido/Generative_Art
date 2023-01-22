@@ -46,13 +46,13 @@ window.onload = function () {
   const sidesSlider = document.querySelector("#sides");
   const sidesLabel = document.querySelector('[for="sides"]');
 
-  spreadSlider.addEventListener("change", function (e) {
+  spreadSlider.addEventListener("input", function (e) {
     spread = e.target.value;
     updateSlider();
     drawFractal();
   });
 
-  sidesSlider.addEventListener("change", function (e) {
+  sidesSlider.addEventListener("input", function (e) {
     sides = e.target.value;
     updateSlider();
     drawFractal();
