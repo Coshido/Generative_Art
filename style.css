@@ -8,6 +8,10 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+@font-face {
+  font-family: Roboto;
+  src: url(./Roboto-Regular.ttf);
+}
 #main-canvas {
   background-color: black;
   overflow: hidden;
@@ -31,5 +35,19 @@ body {
 #control-div div {
   display: flex;
   flex-direction: column;
+  color: white;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+.footer-link {
+  font-family: Roboto, sans-serif;
+  text-decoration: none;
   color: white;
 }
