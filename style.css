@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main-canvas {
+  background-color: black;
+}
+
+#control-div {
+  position: absolute;
+  padding: 5px;
+  border: 1px solid white;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#random-button,
+#reset-button {
+  padding: 5px 10px;
+}
+#control-div div {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
